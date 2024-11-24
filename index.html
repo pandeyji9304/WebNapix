@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Napix - Real-Time Driver Monitoring</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Napix</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="hero">
+        <div class="container">
+            <h2>Real-Time Driver Monitoring & Safety</h2>
+            <p>Enhancing road safety for logistics companies with AI-powered drowsiness detection.</p>
+            <div class="additional-info">
+                <p>
+                    Napix is here! We are excited to introduce Napix, an innovative driver monitoring system 
+                    designed to enhance road safety and streamline logistics operations. This first release 
+                    is packed with essential features to keep both drivers and logistics teams connected and 
+                    informed in real-time.
+                </p>
+                <h4>What’s Included in Version 1.0:</h4>
+                <ul>
+                    <li>Real-time drowsiness detection</li>
+                    <li>Driver and vehicle management</li>
+                    <li>Real-time alerts for logistics</li>
+                    <li>Secure data management</li>
+                </ul>
+                <p>
+                    This is just the beginning! We’re committed to making Napix even better. Stay tuned for 
+                    future updates, including expanded detection capabilities and additional features designed 
+                    to make road safety smarter and more effective.
+                </p>
+                <ul>
+                    <li><strong>Age:</strong> 18+</li>
+                    <li><strong>Language:</strong> English</li>
+                    <li><strong>In-App Purchases:</strong> No</li>
+                    <li><strong>Size:</strong> N/A</li>
+                    <li><strong>Compatibility:</strong> Requires iOS 17 or later. Compatible with iPhone.</li>
+                    <li><strong>Price:</strong> Free</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <main>
+        <section id="about" class="tab-section">
+            <h2>About Napix</h2>
+            <p>
+                Napix is an innovative app designed to improve logistics safety by detecting driver drowsiness using advanced machine learning models. It provides real-time monitoring and alerts to ensure driver safety and streamline logistics operations.
+            </p>
+            <div class="about-container">
+                <div class="about-box">
+                    <h3>Logistics</h3>
+                    <p>
+                        Napix streamlines logistics operations by providing tools for real-time vehicle monitoring, automated alerts for driver drowsiness, and detailed reporting to optimize fleet management.
+                    </p>
+                    <button class="learn-more-btn" onclick="location.href='logistics.html'">Learn More</button>
+                </div>
+                <div class="about-box">
+                    <h3>Drivers</h3>
+                    <p>
+                        Napix ensures driver safety with real-time drowsiness detection, personalized alerts, and support for safe driving practices. It helps drivers stay alert and ensures their well-being on the road.
+                    </p>
+                    <button class="learn-more-btn" onclick="location.href='drivers.html'">Learn More</button>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="features" class="tab-section">
+            <h2>Core Features</h2>
+            <div class="features-grid">
+                <!-- Drowsiness Detection -->
+                <div class="feature-item">
+                    <h3>Drowsiness Detection</h3>
+                    <p>
+                        AI-powered detection of fatigue using CoreML, providing real-time alerts to drivers and logistics teams.
+                    </p>
+                    <div class="more-content" id="drowsiness-more">
+                        <p>
+                            The system uses advanced machine learning models to analyze driver behavior and environmental factors,
+                            ensuring proactive measures are taken before accidents occur.
+                        </p>
+                    </div>
+                    <button class="see-more-btn" onclick="toggleDetails('drowsiness-more')">See More</button>
+                </div>
+        
+                <!-- Driver & Vehicle Management -->
+                <div class="feature-item">
+                    <h3>Driver & Vehicle Management</h3>
+                    <p>
+                        Effortlessly add and manage drivers, assign vehicles, and organize routes from a single interface.
+                    </p>
+                    <div class="more-content" id="management-more">
+                        <p>
+                            This feature allows logistics managers to streamline operations, reducing delays and optimizing resource
+                            allocation for improved efficiency.
+                        </p>
+                    </div>
+                    <button class="see-more-btn" onclick="toggleDetails('management-more')">See More</button>
+                </div>
+        
+                <!-- Real-Time Alerts -->
+                <div class="feature-item">
+                    <h3>Real-Time Alerts</h3>
+                    <p>
+                        Receive and monitor driver drowsiness alerts instantly, ensuring prompt action.
+                    </p>
+                    <div class="more-content" id="alerts-more">
+                        <p>
+                            Alerts are sent directly to the logistics dashboard and driver's app, ensuring that the response is
+                            immediate and effective.
+                        </p>
+                    </div>
+                    <button class="see-more-btn" onclick="toggleDetails('alerts-more')">See More</button>
+                </div>
+        
+                <!-- Secure Data Management -->
+                <div class="feature-item">
+                    <h3>Secure Data Management</h3>
+                    <p>
+                        State-of-the-art backend using Node.js and MongoDB ensures your data remains private and protected.
+                    </p>
+                    <div class="more-content" id="data-more">
+                        <p>
+                            We employ robust encryption protocols and regular audits to ensure that sensitive information is safe
+                            from breaches.
+                        </p>
+                    </div>
+                    <button class="see-more-btn" onclick="toggleDetails('data-more')">See More</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="how-it-works" class="how-it-works-section">
+            <h2>How It Works</h2>
+            <p>Napix simplifies operations for logistics teams and drivers. Follow the steps below:</p>
+            <div class="steps-container">
+              <div class="step">
+                <div class="step-icon">🔑</div>
+                <h3>Step 1: Login & Sign-Up</h3>
+                <p>
+                  Start by signing up with your name, email, company name, company profile, and password. Once registered, log in to access the app.
+                </p>
+              </div>
+              <div class="step">
+                <div class="step-icon">📋</div>
+                <h3>Step 2: Alert Board</h3>
+                <p>
+                  Upon logging in, you'll land on the *Alert Board* page, where you can view scheduled routes and active routes currently on the road.
+                </p>
+              </div>
+              <div class="step">
+                <div class="step-icon">🚛</div>
+                <h3>Step 3: Fleet Management</h3>
+                <p>
+                  In the *Fleet Management* tab, add vehicle details such as truck numbers and manage your fleet efficiently.
+                </p>
+              </div>
+              <div class="step">
+                <div class="step-icon">🧑‍✈️</div>
+                <h3>Step 4: Profile and Driver Management</h3>
+                <p>
+                  Edit your profile, manage company details, and add new drivers by entering their information. Drivers receive an email with login credentials.
+                </p>
+              </div>
+              <div class="step">
+                <div class="step-icon">📍</div>
+                <h3>Step 5: Schedule Routes</h3>
+                <p>
+                  Schedule routes by selecting the vehicle, driver, and departure/arrival locations. Monitor real-time alerts for active routes.
+                </p>
+              </div>
+              <div class="step">
+                <div class="step-icon">🛑</div>
+                <h3>Step 6: Active Alerts</h3>
+                <p>
+                  View trucks not driving safely under the *Active Alerts* segment. Alerts are triggered by drowsy driving or unsafe conditions.
+                </p>
+              </div>
+              <div class="step">
+                <div class="step-icon">🚚</div>
+                <h3>Step 7: Driver Interface</h3>
+                <p>
+                  Drivers log in with credentials provided by the logistics team. They can monitor their assigned vehicle, receive alerts, and edit their profiles.
+                </p>
+              </div>
+              <div class="step">
+                <div class="step-icon">🔔</div>
+                <h3>Step 8: Real-Time Monitoring</h3>
+                <p>
+                  Drivers can start monitoring by entering the vehicle number. Alerts are sent to the logistics team for drowsy or unsafe driving conditions.
+                </p>
+              </div>
+            </div>
+          </section>
+          
+        
+    </main>
+    <section id="contact" class="tab-section">
+        <h2>Contact Us</h2>
+        
+        <!-- Frequently Asked Questions (FAQ) -->
+        <div class="faq">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-item">
+                <h4 class="faq-question" onclick="toggleFAQ('faq1')">
+                    What is the Napix app?
+                    <span class="plus">+</span>
+                </h4>
+                <p id="faq1" class="faq-answer" style="display: none;">Napix is a logistics and transportation management app designed to help businesses streamline their operations, manage routes, assign vehicles, track drivers, and send real-time alerts for safety. It allows users to manage logistics-related tasks efficiently, improving the overall transportation experience.</p>
+            </div>
+            <div class="faq-item">
+                <h4 class="faq-question" onclick="toggleFAQ('faq2')">
+                    How do I create an account on Napix?
+                    <span class="plus">+</span>
+                </h4>
+                <p id="faq2" class="faq-answer" style="display: none;">To create an account, download the Napix app from the App Store or Google Play, and follow the sign-up process. You'll be asked to enter your name, email, phone number, company details, and a password. After completing these details, you can start using the app.</p>
+            </div>
+            <div class="faq-item">
+                <h4 class="faq-question" onclick="toggleFAQ('faq3')">
+                    How can I track my drivers and vehicles in real time?
+                    <span class="plus">+</span>
+                </h4>
+                <p id="faq3" class="faq-answer" style="display: none;">The Napix app provides real-time tracking through GPS integration. Once drivers are assigned to a route, you can track their location on the map in the app. Additionally, you’ll receive real-time updates on the driver’s status, such as "Active," "Driving Safely," or "Drowsy."</p>
+            </div>
+            <div class="faq-item">
+                <h4 class="faq-question" onclick="toggleFAQ('faq4')">
+                    How do I update my profile information?
+                                        <span class="plus">+</span>
+                </h4>
+                <p id="faq4" class="faq-answer" style="display: none;">To update your profile, go to the 'Profile' section in the app. You can edit your personal details, contact information, and even upload or change your profile picture. These updates will be reflected in your account immediately.</p>
+            </div>
+            <div class="faq-item">
+                <h4 class="faq-question" onclick="toggleFAQ('faq5')">
+                    What should I do if I forget my password?
+                    <span class="plus">+</span>
+                </h4>
+                <p id="faq5" class="faq-answer" style="display: none;">If you've forgotten your password, simply click the "Forgot Password" link on the login screen. You'll be asked to enter your registered email address, and a password reset link will be sent to your email. Follow the instructions in the email to reset your password.</p>
+            </div>
+        </div>
+        
+    
+        <!-- Developer Contact Information -->
+        <section id="developer-section" class="developer-contact">
+            <h3>Meet Our Developers</h3>
+            <div class="developer-slider" id="developerSlider">
+                <div class="developer-container" id="developerContainer">
+                    <div class="developer-info">
+                        <img src="./tushar.png" alt="Tushar Mahajan">
+                        <h4>Tushar Mahajan</h4>
+                        <p>Email: <a href="mailto:tusharmahajan080@gmail.com">tusharmahajan080@gmail.com</a></p>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/tushar-mahajan-110451225/" target="_blank">Tushar Mahajan</a></p>
+                        <p>Github: <a href="https://github.com/Tushar20-20Mahajan" target="_blank">Tushar20-20Mahajan</a></p>
+                    </div>
+                    <div class="developer-info">
+                        <img src="./ritik.png" alt="Ritik Pandey">
+                        <h4>Ritik Pandey</h4>
+                        <p>Email: <a href="mailto:ritikpandey9304@gmail.com">ritikpandey9304@gmail.com</a></p>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/pandeyji9304" target="_blank">Ritik Pandey</a></p>
+                        <p>Github: <a href="https://github.com/Pandeyji9304" target="_blank">Pandeyji9304</a></p>
+                    </div>
+                    <div class="developer-info">
+                        <img src="./sunidhi.png" alt="Sunidhi Ratra">
+                        <h4>Sunidhi Ratra</h4>
+                        <p>Email: <a href="mailto:sunidhiratra21@gmail.com">sunidhiratra21@gmail.com</a></p>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/sunidhiratra30/" target="_blank">Sunidhi Ratra</a></p>
+                        <p>Github: <a href="https://github.com/Sunidhi30" target="_blank">Sunidhi30</a></p>
+                    </div>
+                    <div class="developer-info">
+                        <img src="./utsav.png" alt="Sam Johnson">
+                        <h4>Utsav Sharma</h4>
+                        <p>Email: <a href="mailto:sutsav440@gmail.com">sutsav440@gmail.com</a></p>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/utsav-sharma-eng44/" target="_blank">Utsav Sharma</a></p>
+                        <p>Github: <a href="https://github.com/UtsavS44" target="_blank">UtsavS44</a></p>
+                    </div>
+                </div>
+            </div>
+            <button id="scrollLeft" class="arrow left-arrow">&#8592;</button>
+            <button id="scrollRight" class="arrow right-arrow">&#8594;</button>
+        </section>
+        
+        
+        
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Napix. All rights reserved. | <a href="mailto:thoseitguys01@gmail.com" class="contact-link">Contact Support</a></p>
+        </div>
+    </footer>
+</body>
+</html>
